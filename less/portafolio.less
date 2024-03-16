@@ -1,0 +1,42 @@
+h2 {
+    color: @blanco;
+    text-align: center;
+}
+
+
+.portafolio_contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1024px;
+    margin: 1rem auto 1rem auto;
+
+    .imagenes_portafolio {
+        img {
+            max-width: 250px;
+            width: 100%;
+            max-height: 200px;
+            height: 100%;
+            margin: 10px;
+            transition: transform 0.75s ease-in-out, z-index 0.75s ease-in-out;
+
+            @media only screen and (max-width: @breaks[md]) {
+                max-width: 100px;
+                width: 100%;
+            }
+
+
+            @media only screen and (max-width: @breaks[lg]) {
+                max-width: 300px;
+                width: 100%;
+            }
+
+
+            :hover {
+                transform: scale(1.20);
+                z-index: 90;
+            }
+        }
+    }
+
+}

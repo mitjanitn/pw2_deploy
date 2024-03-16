@@ -1,0 +1,59 @@
+header {
+    display: flex;
+    padding: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: @header_bg_color;
+
+
+    .logo {
+        text-decoration: none;
+        color: @blanco;
+        font-size: 25px;
+
+
+        @media only screen and (max-width: @breaks[md]) {
+            margin-bottom: 10px;
+        }
+
+
+        @media only screen and (max-width: @breaks[lg]) {
+            margin-bottom: 10px;
+        }
+
+    }
+
+
+    nav {
+        margin-left: auto;
+
+        a {
+            text-decoration: none;
+            color: @blanco;
+        }
+
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+
+            @media only screen and (max-width: @breaks[md]) {
+                display: none;
+            }
+
+            @media only screen and (max-width: @breaks[lg]) {
+
+                display: none;
+            }
+
+
+            li {
+                display: inline;
+                margin-right: 20px;
+                padding: 1em;
+            }
+        }
+    }
+}
